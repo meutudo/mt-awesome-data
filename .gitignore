@@ -1,0 +1,80 @@
+# Diretório gerado após o build do MkDocs
+/site/
+
+# =====================================
+# Ambiente Virtual Python
+# =====================================
+
+# Diretórios comuns de ambientes virtuais
+venv/
+.env/
+.venv/
+env/
+ENV/
+
+# =====================================
+# Cache e Arquivos Compilados Python
+# =====================================
+
+# Diretórios de cache Python
+__pycache__/
+*.py[cod]
+
+# Arquivos compilados Python
+*.so
+
+# =====================================
+# Arquivos de Configuração e Dependências
+# =====================================
+
+# Arquivo de dependências do pip
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Arquivo de dependências do Poetry
+poetry.lock
+
+# =====================================
+# Configurações de IDEs e Editores
+# =====================================
+
+# Visual Studio Code
+.vscode/
+*.code-workspace
+
+# PyCharm
+.idea/
+*.iml
+
+# Sublime Text
+*.sublime-project
+*.sublime-workspace
+
+# Outros editores
+*.swp
+*~
+
+# =====================================
+# Arquivos do Sistema Operacional
+# =====================================
+
+# macOS
+.DS_Store
+
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# =====================================
+# Outros Arquivos e Diretórios
+# =====================================
+
+# Logs
+logs/
+*.log
+
+# Backup files
+*.bak
+*.backup
+*.tmp
