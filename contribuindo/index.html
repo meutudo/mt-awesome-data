@@ -11,7 +11,7 @@
         <link rel="canonical" href="https://meutudo.github.io/mt-awesome-data/contribuindo/">
       
       
-        <link rel="prev" href="../recursos/ferramentas/">
+        <link rel="prev" href="../processos-operacionais/pull-request/">
       
       
         <link rel="next" href="../sobre/">
@@ -70,6 +70,11 @@
     <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
+      
+        
+        <a href="#contribuindo-para-a-documentacao-do-mt-awesome-data" class="md-skip">
+          Skip to content
+        </a>
       
     </div>
     <div data-md-component="announce">
@@ -329,6 +334,48 @@
 
               
             
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Processos Operacionais
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            Processos Operacionais
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
               
                 
   
@@ -336,11 +383,11 @@
   
   
     <li class="md-nav__item">
-      <a href="../recursos/processos-operacionais/pull-request.md" class="md-nav__link">
+      <a href="../processos-operacionais/pull-request/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    Processo de Pull Request
+    Pull Request
   </span>
   
 
@@ -370,6 +417,19 @@
       <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
       
       
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Contribuindo
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
       
       <a href="./" class="md-nav__link md-nav__link--active">
         
@@ -380,6 +440,256 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#indice" class="md-nav__link">
+    <span class="md-ellipsis">
+      Índice
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#pre-requisitos" class="md-nav__link">
+    <span class="md-ellipsis">
+      Pré-requisitos
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Pré-requisitos">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#instalando-o-mkdocs-e-o-tema-material" class="md-nav__link">
+    <span class="md-ellipsis">
+      Instalando o MkDocs e o Tema Material
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#passo-a-passo-para-contribuir" class="md-nav__link">
+    <span class="md-ellipsis">
+      Passo a Passo para Contribuir
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Passo a Passo para Contribuir">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-fork-e-clone-do-repositorio" class="md-nav__link">
+    <span class="md-ellipsis">
+      1. Fork e Clone do Repositório
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-configurar-o-ambiente-de-desenvolvimento" class="md-nav__link">
+    <span class="md-ellipsis">
+      2. Configurar o Ambiente de Desenvolvimento
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-criar-uma-branch-para-sua-contribuicao" class="md-nav__link">
+    <span class="md-ellipsis">
+      3. Criar uma Branch para Sua Contribuição
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4-adicionar-ou-atualizar-a-documentacao" class="md-nav__link">
+    <span class="md-ellipsis">
+      4. Adicionar ou Atualizar a Documentação
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#5-testar-as-alteracoes-localmente" class="md-nav__link">
+    <span class="md-ellipsis">
+      5. Testar as Alterações Localmente
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#6-commitar-e-push-das-alteracoes" class="md-nav__link">
+    <span class="md-ellipsis">
+      6. Commitar e Push das Alterações
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#7-abrir-um-pull-request" class="md-nav__link">
+    <span class="md-ellipsis">
+      7. Abrir um Pull Request
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#processo-de-code-review" class="md-nav__link">
+    <span class="md-ellipsis">
+      Processo de Code Review
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Processo de Code Review">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#uso-de-codeowners" class="md-nav__link">
+    <span class="md-ellipsis">
+      Uso de CODEOWNERS
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#requisitos-para-o-merge" class="md-nav__link">
+    <span class="md-ellipsis">
+      Requisitos para o Merge
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#fluxo-de-code-review" class="md-nav__link">
+    <span class="md-ellipsis">
+      Fluxo de Code Review
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#boas-praticas-de-contribuicao" class="md-nav__link">
+    <span class="md-ellipsis">
+      Boas Práticas de Contribuição
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Boas Práticas de Contribuição">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-escreva-um-titulo-e-descricao-claros" class="md-nav__link">
+    <span class="md-ellipsis">
+      1. Escreva um Título e Descrição Claros
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-mantenha-a-documentacao-organizada" class="md-nav__link">
+    <span class="md-ellipsis">
+      2. Mantenha a Documentação Organizada
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-use-links-relativos" class="md-nav__link">
+    <span class="md-ellipsis">
+      3. Use Links Relativos
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4-verifique-ortografia-e-gramatica" class="md-nav__link">
+    <span class="md-ellipsis">
+      4. Verifique Ortografia e Gramática
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#5-teste-localmente" class="md-nav__link">
+    <span class="md-ellipsis">
+      5. Teste Localmente
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#6-seja-respeitoso-e-construtivo-no-feedback" class="md-nav__link">
+    <span class="md-ellipsis">
+      6. Seja Respeitoso e Construtivo no Feedback
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#recursos-adicionais" class="md-nav__link">
+    <span class="md-ellipsis">
+      Recursos Adicionais
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -422,6 +732,247 @@
   
   
   
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#indice" class="md-nav__link">
+    <span class="md-ellipsis">
+      Índice
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#pre-requisitos" class="md-nav__link">
+    <span class="md-ellipsis">
+      Pré-requisitos
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Pré-requisitos">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#instalando-o-mkdocs-e-o-tema-material" class="md-nav__link">
+    <span class="md-ellipsis">
+      Instalando o MkDocs e o Tema Material
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#passo-a-passo-para-contribuir" class="md-nav__link">
+    <span class="md-ellipsis">
+      Passo a Passo para Contribuir
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Passo a Passo para Contribuir">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-fork-e-clone-do-repositorio" class="md-nav__link">
+    <span class="md-ellipsis">
+      1. Fork e Clone do Repositório
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-configurar-o-ambiente-de-desenvolvimento" class="md-nav__link">
+    <span class="md-ellipsis">
+      2. Configurar o Ambiente de Desenvolvimento
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-criar-uma-branch-para-sua-contribuicao" class="md-nav__link">
+    <span class="md-ellipsis">
+      3. Criar uma Branch para Sua Contribuição
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4-adicionar-ou-atualizar-a-documentacao" class="md-nav__link">
+    <span class="md-ellipsis">
+      4. Adicionar ou Atualizar a Documentação
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#5-testar-as-alteracoes-localmente" class="md-nav__link">
+    <span class="md-ellipsis">
+      5. Testar as Alterações Localmente
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#6-commitar-e-push-das-alteracoes" class="md-nav__link">
+    <span class="md-ellipsis">
+      6. Commitar e Push das Alterações
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#7-abrir-um-pull-request" class="md-nav__link">
+    <span class="md-ellipsis">
+      7. Abrir um Pull Request
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#processo-de-code-review" class="md-nav__link">
+    <span class="md-ellipsis">
+      Processo de Code Review
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Processo de Code Review">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#uso-de-codeowners" class="md-nav__link">
+    <span class="md-ellipsis">
+      Uso de CODEOWNERS
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#requisitos-para-o-merge" class="md-nav__link">
+    <span class="md-ellipsis">
+      Requisitos para o Merge
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#fluxo-de-code-review" class="md-nav__link">
+    <span class="md-ellipsis">
+      Fluxo de Code Review
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#boas-praticas-de-contribuicao" class="md-nav__link">
+    <span class="md-ellipsis">
+      Boas Práticas de Contribuição
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Boas Práticas de Contribuição">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-escreva-um-titulo-e-descricao-claros" class="md-nav__link">
+    <span class="md-ellipsis">
+      1. Escreva um Título e Descrição Claros
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-mantenha-a-documentacao-organizada" class="md-nav__link">
+    <span class="md-ellipsis">
+      2. Mantenha a Documentação Organizada
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-use-links-relativos" class="md-nav__link">
+    <span class="md-ellipsis">
+      3. Use Links Relativos
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4-verifique-ortografia-e-gramatica" class="md-nav__link">
+    <span class="md-ellipsis">
+      4. Verifique Ortografia e Gramática
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#5-teste-localmente" class="md-nav__link">
+    <span class="md-ellipsis">
+      5. Teste Localmente
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#6-seja-respeitoso-e-construtivo-no-feedback" class="md-nav__link">
+    <span class="md-ellipsis">
+      6. Seja Respeitoso e Construtivo no Feedback
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#recursos-adicionais" class="md-nav__link">
+    <span class="md-ellipsis">
+      Recursos Adicionais
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
   
 </nav>
                   </div>
@@ -439,9 +990,362 @@
   
 
 
-  <h1>Contribuindo</h1>
+<h1 id="contribuindo-para-a-documentacao-do-mt-awesome-data">Contribuindo para a Documentação do MT Awesome Data</h1>
+<p>Obrigado por considerar contribuir para a <strong>Documentação do MT Awesome Data</strong>! Nossa documentação é mantida de forma colaborativa para garantir que forneça informações precisas, atualizadas e úteis para todos os membros do time de dados da Meutudo (MT).</p>
+<p>Este guia tem como objetivo facilitar sua contribuição, explicando como você pode adicionar ou atualizar páginas na documentação automatizada utilizando o <strong>MkDocs</strong> e o fluxo de trabalho estabelecido com as branches <code>main</code> e <code>homolog</code>.</p>
+<h2 id="indice">Índice</h2>
+<ul>
+<li>Pré-requisitos</li>
+<li>Passo a Passo para Contribuir</li>
+<li>
+<ol>
+<li>Fork e Clone do Repositório</li>
+</ol>
+</li>
+<li>
+<ol>
+<li>Configurar o Ambiente de Desenvolvimento</li>
+</ol>
+</li>
+<li>
+<ol>
+<li>Criar uma Branch para Sua Contribuição</li>
+</ol>
+</li>
+<li>
+<ol>
+<li>Adicionar ou Atualizar a Documentação</li>
+</ol>
+</li>
+<li>
+<ol>
+<li>Testar as Alterações Localmente</li>
+</ol>
+</li>
+<li>
+<ol>
+<li>Commitar e Push das Alterações</li>
+</ol>
+</li>
+<li>
+<ol>
+<li>Abrir um Pull Request</li>
+</ol>
+</li>
+<li>Processo de Code Review</li>
+<li>Uso de CODEOWNERS</li>
+<li>Requisitos para o Merge</li>
+<li>Boas Práticas de Contribuição</li>
+<li>Recursos Adicionais</li>
+<li>Código de Conduta</li>
+</ul>
+<h2 id="pre-requisitos">Pré-requisitos</h2>
+<p>Antes de começar, certifique-se de ter o seguinte instalado em sua máquina:</p>
+<ul>
+<li><strong>Git</strong>: Para controle de versão e integração com o GitHub.</li>
+<li><strong>Python</strong> (versão 3.6 ou superior): Necessário para executar o MkDocs.</li>
+<li><strong>MkDocs</strong>: Ferramenta para gerar a documentação.</li>
+<li><strong>MkDocs Material</strong> (opcional): Tema para uma aparência moderna da documentação.</li>
+</ul>
+<h3 id="instalando-o-mkdocs-e-o-tema-material">Instalando o MkDocs e o Tema Material</h3>
+<ol>
+<li><strong>Instalar o MkDocs:</strong></li>
+</ol>
+<p><code>bash
+   pip install mkdocs</code></p>
+<ol>
+<li><strong>Instalar o Tema Material (opcional, mas recomendado):</strong></li>
+</ol>
+<p><code>bash
+   pip install mkdocs-material</code></p>
+<h2 id="passo-a-passo-para-contribuir">Passo a Passo para Contribuir</h2>
+<h3 id="1-fork-e-clone-do-repositorio">1. Fork e Clone do Repositório</h3>
+<ol>
+<li>
+<p><strong>Faça um Fork do Repositório:</strong></p>
+</li>
+<li>
+<p>Navegue até o repositório <a href="https://github.com/meutudo/mt-awesome-data">meutudo/mt-awesome-data</a> no GitHub.</p>
+</li>
+<li>
+<p>Clique no botão <strong>"Fork"</strong> no canto superior direito para criar uma cópia do repositório na sua conta.</p>
+</li>
+<li>
+<p><strong>Clone o Repositório Forked:</strong></p>
+</li>
+</ol>
+<p>Abra o terminal e execute:</p>
+<p><code>bash
+   git clone https://github.com/seu-usuario/mt-awesome-data.git
+   cd mt-awesome-data</code></p>
+<blockquote>
+<p><strong>Nota:</strong> Substitua <code>seu-usuario</code> pelo seu nome de usuário no GitHub.</p>
+</blockquote>
+<h3 id="2-configurar-o-ambiente-de-desenvolvimento">2. Configurar o Ambiente de Desenvolvimento</h3>
+<ol>
+<li><strong>Criar um Ambiente Virtual (Recomendado):</strong></li>
+</ol>
+<p><code>bash
+   python -m venv venv</code></p>
+<ol>
+<li>
+<p><strong>Ativar o Ambiente Virtual:</strong></p>
+</li>
+<li>
+<p><strong>No Windows:</strong></p>
+<p><code>bash
+ venv\Scripts\activate</code></p>
+</li>
+<li>
+<p><strong>No macOS/Linux:</strong></p>
+<p><code>bash
+ source venv/bin/activate</code></p>
+</li>
+<li>
+<p><strong>Instalar as Dependências:</strong></p>
+</li>
+</ol>
+<p><code>bash
+   pip install --upgrade pip
+   pip install mkdocs mkdocs-material</code></p>
+<h3 id="3-criar-uma-branch-para-sua-contribuicao">3. Criar uma Branch para Sua Contribuição</h3>
+<p>Sempre crie uma nova branch para cada contribuição para manter o histórico de commits organizado.</p>
+<pre><code class="language-bash">git checkout -b feature/adicionar-faq
+</code></pre>
+<blockquote>
+<p><strong>Boas Práticas de Nomeação:</strong></p>
+<ul>
+<li>Use nomes descritivos e concisos.</li>
+<li>Inclua o tipo de alteração e uma breve descrição.</li>
+</ul>
+<p><strong>Exemplos:</strong></p>
+<ul>
+<li><code>feature/adicionar-faq</code></li>
+<li><code>docs/atualizar-tutorial-login</code></li>
+</ul>
+</blockquote>
+<h3 id="4-adicionar-ou-atualizar-a-documentacao">4. Adicionar ou Atualizar a Documentação</h3>
+<ol>
+<li><strong>Navegue até a Pasta de Documentação:</strong></li>
+</ol>
+<p><code>bash
+   cd docs/recursos/</code></p>
+<ol>
+<li>
+<p><strong>Criar ou Editar o Arquivo <code>faq.md</code>:</strong></p>
+</li>
+<li>
+<p><strong>Para adicionar uma nova página:</strong></p>
+<p><code>bash
+ touch faq.md</code></p>
+</li>
+<li>
+<p><strong>Adicionar Conteúdo ao <code>faq.md</code>:</strong></p>
+<p>Abra o arquivo <code>faq.md</code> no seu editor de texto favorito e adicione o conteúdo desejado.</p>
+<p><strong>Exemplo de Conteúdo:</strong></p>
+<p>```markdown
+ # FAQ - Perguntas Frequentes</p>
+<p>## 1. Como posso contribuir para a documentação?</p>
+<p>Para contribuir, siga o <a href="./">guia de contribuição</a>. Crie uma branch, adicione ou atualize a documentação e abra um Pull Request.</p>
+<p>## 2. Quem são os responsáveis pelas revisões de código?</p>
+<p>As revisões são feitas pelos membros designados no arquivo CODEOWNERS.</p>
+<p>## 3. Quais são as melhores práticas para escrever documentação?</p>
+<ul>
+<li>Seja claro e conciso.</li>
+<li>Utilize formatação adequada.</li>
+<li>Mantenha os exemplos atualizados.</li>
+<li>Revise ortografia e gramática.</li>
+</ul>
+<p>## 4. Como reportar um erro na documentação?</p>
+<p>Abra uma <a href="https://github.com/meutudo/mt-awesome-data/issues">Issue</a> descrevendo o erro encontrado com detalhes suficientes para reprodução.
+ ```</p>
+</li>
+</ol>
+<h3 id="5-testar-as-alteracoes-localmente">5. Testar as Alterações Localmente</h3>
+<p>Antes de enviar suas alterações, é importante verificar se tudo está funcionando corretamente.</p>
+<ol>
+<li><strong>Iniciar o Servidor de Desenvolvimento do MkDocs:</strong></li>
+</ol>
+<p><code>bash
+   mkdocs serve</code></p>
+<ol>
+<li><strong>Visualizar a Documentação:</strong></li>
+</ol>
+<p>Abra o navegador e acesse <a href="http://127.0.0.1:8000/">http://127.0.0.1:8000/</a> para ver as alterações em tempo real.</p>
+<blockquote>
+<p><strong>Dica:</strong> O servidor de desenvolvimento recarrega automaticamente a página sempre que você salva alterações nos arquivos Markdown ou no <code>mkdocs.yml</code>.</p>
+</blockquote>
+<h3 id="6-commitar-e-push-das-alteracoes">6. Commitar e Push das Alterações</h3>
+<ol>
+<li><strong>Adicionar os Arquivos Modificados:</strong></li>
+</ol>
+<p><code>bash
+   git add docs/recursos/faq.md</code></p>
+<ol>
+<li><strong>Fazer o Commit das Alterações:</strong></li>
+</ol>
+<p><code>bash
+   git commit -m "Adiciona página FAQ à seção Recursos"</code></p>
+<ol>
+<li><strong>Push para o Repositório Forked:</strong></li>
+</ol>
+<p><code>bash
+   git push origin feature/adicionar-faq</code></p>
+<h3 id="7-abrir-um-pull-request">7. Abrir um Pull Request</h3>
+<ol>
+<li><strong>Acesse o Repositório Forked no GitHub:</strong></li>
+</ol>
+<p>Navegue até o seu repositório forked, por exemplo, <a href="https://github.com/seu-usuario/mt-awesome-data">seu-usuario/mt-awesome-data</a>.</p>
+<ol>
+<li>
+<p><strong>Iniciar um Novo Pull Request:</strong></p>
+</li>
+<li>
+<p>Clique no botão <strong>"Compare &amp; pull request"</strong>.</p>
+</li>
+<li><strong>Base Branch:</strong> Selecione a branch <code>homolog</code>.</li>
+<li>
+<p><strong>Compare Branch:</strong> Deve ser a branch que você criou, por exemplo, <code>feature/adicionar-faq</code>.</p>
+</li>
+<li>
+<p><strong>Preencher o Título e a Descrição do PR:</strong></p>
+</li>
+<li>
+<p><strong>Título:</strong> Seja claro e descritivo.</p>
+</li>
+<li><strong>Descrição:</strong> Explique o que foi alterado, por que foi necessário e quaisquer detalhes relevantes.</li>
+</ol>
+<p><strong>Exemplo de Título:</strong></p>
+<p><code>Adiciona página FAQ à seção Recursos</code></p>
+<p><strong>Exemplo de Descrição:</strong></p>
+<p><code>``
+   ### Descrição
+   Esta PR adiciona uma nova página</code>faq.md` à seção <strong>Recursos</strong> da documentação. A página inclui respostas para perguntas frequentes do time de dados.</p>
+<p>### Mudanças Realizadas
+   - Criação do arquivo <code>docs/recursos/faq.md</code> com conteúdo inicial.
+   - Atualização do arquivo <code>mkdocs.yml</code> para incluir a nova página na navegação.</p>
+<p>### Referências
+   - Issue #15 (se aplicável)
+   ```</p>
+<ol>
+<li><strong>Enviar o Pull Request:</strong></li>
+<li>Clique em <strong>"Create pull request"</strong> para enviar sua contribuição.</li>
+</ol>
+<h2 id="processo-de-code-review">Processo de Code Review</h2>
+<h3 id="uso-de-codeowners">Uso de CODEOWNERS</h3>
+<p>O arquivo <code>CODEOWNERS</code> define quais membros ou equipes são responsáveis por revisar mudanças em determinadas partes do repositório. Quando um Pull Request (PR) altera arquivos cobertos pelo <code>CODEOWNERS</code>, os revisores designados são automaticamente adicionados como revisores do PR.</p>
+<p><strong>Exemplo de <code>CODEOWNERS</code>:</strong></p>
+<pre><code class="language-plaintext"># Dono para toda a base de código
+* @dev-team
 
-
+# Dono para arquivos de documentação
+/docs/* @documentacao
+</code></pre>
+<h3 id="requisitos-para-o-merge">Requisitos para o Merge</h3>
+<p>Para que um Pull Request seja mesclado na branch <code>homolog</code>, os seguintes requisitos devem ser atendidos:</p>
+<ol>
+<li>
+<p><strong>Aprovações Mínimas:</strong></p>
+</li>
+<li>
+<p><strong>Pelo menos 2 aprovações</strong> de revisores designados no <code>CODEOWNERS</code>.</p>
+</li>
+<li>
+<p><strong>Resolução de Conflitos:</strong></p>
+</li>
+<li>
+<p>Todos os <strong>conflitos</strong> entre a branch de origem (<code>feature</code>) e a branch de destino (<code>homolog</code>) devem ser <strong>resolvidos</strong> antes do merge.</p>
+</li>
+<li>
+<p><strong>Sem Verificações Pendentes:</strong></p>
+</li>
+<li>Certifique-se de que todas as <strong>verificações automáticas</strong> (como testes e linting) passaram com sucesso.</li>
+</ol>
+<h3 id="fluxo-de-code-review">Fluxo de Code Review</h3>
+<ol>
+<li>
+<p><strong>Revisores Recebem a Notificação:</strong></p>
+</li>
+<li>
+<p>Os revisores designados são automaticamente solicitados a revisar o PR.</p>
+</li>
+<li>
+<p><strong>Revisores Analisam as Alterações:</strong></p>
+</li>
+<li>
+<p>Verificam a qualidade e a aderência aos padrões do projeto.</p>
+</li>
+<li>
+<p>Validam a precisão e a clareza da documentação.</p>
+</li>
+<li>
+<p><strong>Fornecem Feedback:</strong></p>
+</li>
+<li>
+<p><strong>Aprovações:</strong> Se tudo estiver conforme esperado.</p>
+</li>
+<li>
+<p><strong>Solicitação de Mudanças:</strong> Se houver melhorias a serem feitas.</p>
+</li>
+<li>
+<p><strong>Autor do PR Realiza as Alterações:</strong></p>
+</li>
+<li>
+<p>Faz as modificações solicitadas.</p>
+</li>
+<li>
+<p>Atualiza o PR com os novos commits.</p>
+</li>
+<li>
+<p><strong>Revisores Reavaliam as Alterações:</strong></p>
+</li>
+<li>
+<p>Garantem que as solicitações de mudanças foram atendidas.</p>
+</li>
+<li>
+<p><strong>Merge do Pull Request:</strong></p>
+</li>
+<li>Após obter as aprovações necessárias e resolver os conflitos, o PR pode ser mesclado na branch <code>homolog</code>.</li>
+</ol>
+<h2 id="boas-praticas-de-contribuicao">Boas Práticas de Contribuição</h2>
+<h3 id="1-escreva-um-titulo-e-descricao-claros">1. Escreva um Título e Descrição Claros</h3>
+<ul>
+<li><strong>Título:</strong> Deve resumir a alteração de forma concisa.</li>
+<li><strong>Descrição:</strong> Deve fornecer contexto e detalhes suficientes sobre o que foi alterado e por quê.</li>
+</ul>
+<h3 id="2-mantenha-a-documentacao-organizada">2. Mantenha a Documentação Organizada</h3>
+<ul>
+<li>Siga a estrutura existente do projeto.</li>
+<li>Use cabeçalhos, listas e formatação adequada para melhorar a legibilidade.</li>
+</ul>
+<h3 id="3-use-links-relativos">3. Use Links Relativos</h3>
+<ul>
+<li>Utilize links relativos para referenciar outras páginas da documentação.</li>
+</ul>
+<p><strong>Exemplo:</strong></p>
+<p><code>markdown
+  Para mais informações, consulte a [Página de Contribuição](contribuindo.md).</code></p>
+<h3 id="4-verifique-ortografia-e-gramatica">4. Verifique Ortografia e Gramática</h3>
+<ul>
+<li>Revise o texto para evitar erros que possam comprometer a clareza da documentação.</li>
+</ul>
+<h3 id="5-teste-localmente">5. Teste Localmente</h3>
+<ul>
+<li>Antes de enviar o PR, utilize o <code>mkdocs serve</code> para verificar como as alterações aparecem no site.</li>
+</ul>
+<h3 id="6-seja-respeitoso-e-construtivo-no-feedback">6. Seja Respeitoso e Construtivo no Feedback</h3>
+<ul>
+<li>Ao revisar PRs, forneça feedback de forma respeitosa e construtiva, focando em melhorar a documentação.</li>
+</ul>
+<h2 id="recursos-adicionais">Recursos Adicionais</h2>
+<ul>
+<li><strong><a href="https://www.mkdocs.org/">Documentação Oficial do MkDocs</a>:</strong> Para aprofundar-se nas funcionalidades e configurações do MkDocs.</li>
+<li><strong><a href="https://squidfunk.github.io/mkdocs-material/">Material for MkDocs</a>:</strong> Documentação e exemplos para o tema Material.</li>
+<li><strong><a href="https://docs.github.com/en/pages">GitHub Pages</a>:</strong> Guia oficial para configurar e gerenciar GitHub Pages.</li>
+<li><strong><a href="https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/about-code-owners">GitHub CODEOWNERS</a>:</strong> Informações sobre como configurar o arquivo CODEOWNERS.</li>
+</ul>
+<hr />
+<p><strong>Obrigado por contribuir para a Documentação do MT Awesome Data! Sua participação é fundamental para manter nossa documentação atualizada e útil para todos os membros do time de dados. Se tiver dúvidas ou precisar de assistência durante o processo de contribuição, não hesite em abrir uma Issue ou entrar em contato com a equipe.</strong></p>
 
 
 

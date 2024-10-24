@@ -11,6 +11,10 @@
         <link rel="canonical" href="https://meutudo.github.io/mt-awesome-data/processos-operacionais/pull-request/">
       
       
+        <link rel="prev" href="../../recursos/ferramentas/">
+      
+      
+        <link rel="next" href="../../contribuindo/">
       
       
       <link rel="icon" href="../../assets/images/favicon.png">
@@ -18,7 +22,7 @@
     
     
       
-        <title>Pull request - MT Awesome Data</title>
+        <title>Pull Request - MT Awesome Data</title>
       
     
     
@@ -103,7 +107,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Pull request
+              Pull Request
             
           </span>
         </div>
@@ -330,22 +334,420 @@
 
               
             
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Processos Operacionais
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            Processos Operacionais
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
               
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../../recursos/processos-operacionais/pull-request.md" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Pull Request
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   <span class="md-ellipsis">
-    Processo de Pull Request
+    Pull Request
   </span>
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#1-estrutura-das-branches-main-e-homolog" class="md-nav__link">
+    <span class="md-ellipsis">
+      1. Estrutura das Branches: main e homolog
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="1. Estrutura das Branches: main e homolog">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#11-branch-main" class="md-nav__link">
+    <span class="md-ellipsis">
+      1.1. Branch main
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#12-branch-homolog" class="md-nav__link">
+    <span class="md-ellipsis">
+      1.2. Branch homolog
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-processo-de-pull-request-pr" class="md-nav__link">
+    <span class="md-ellipsis">
+      2. Processo de Pull Request (PR)
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2. Processo de Pull Request (PR)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#21-criacao-de-uma-feature-branch" class="md-nav__link">
+    <span class="md-ellipsis">
+      2.1. Criação de uma Feature Branch
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#22-desenvolvimento-da-funcionalidade" class="md-nav__link">
+    <span class="md-ellipsis">
+      2.2. Desenvolvimento da Funcionalidade
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#23-criacao-do-pull-request" class="md-nav__link">
+    <span class="md-ellipsis">
+      2.3. Criação do Pull Request
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#24-revisao-de-codigo-code-review" class="md-nav__link">
+    <span class="md-ellipsis">
+      2.4. Revisão de Código (Code Review)
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-code-review-com-uso-de-codeowners" class="md-nav__link">
+    <span class="md-ellipsis">
+      3. Code Review com Uso de CODEOWNERS
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="3. Code Review com Uso de CODEOWNERS">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#31-o-que-e-o-codeowners" class="md-nav__link">
+    <span class="md-ellipsis">
+      3.1. O que é o CODEOWNERS?
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#32-configuracao-do-arquivo-codeowners" class="md-nav__link">
+    <span class="md-ellipsis">
+      3.2. Configuração do Arquivo CODEOWNERS
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#33-fluxo-de-code-review-com-codeowners" class="md-nav__link">
+    <span class="md-ellipsis">
+      3.3. Fluxo de Code Review com CODEOWNERS
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-aprovacao-e-merge-do-pull-request" class="md-nav__link">
+    <span class="md-ellipsis">
+      4. Aprovação e Merge do Pull Request
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="4. Aprovação e Merge do Pull Request">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#41-requisitos-para-o-merge" class="md-nav__link">
+    <span class="md-ellipsis">
+      4.1. Requisitos para o Merge
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#42-realizar-o-merge" class="md-nav__link">
+    <span class="md-ellipsis">
+      4.2. Realizar o Merge
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#43-pos-merge" class="md-nav__link">
+    <span class="md-ellipsis">
+      4.3. Pós-Merge
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5-incentivando-um-bom-code-review" class="md-nav__link">
+    <span class="md-ellipsis">
+      5. Incentivando um Bom Code Review
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="5. Incentivando um Bom Code Review">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#51-beneficios-de-um-bom-code-review" class="md-nav__link">
+    <span class="md-ellipsis">
+      5.1. Benefícios de um Bom Code Review
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#52-boas-praticas-para-code-review" class="md-nav__link">
+    <span class="md-ellipsis">
+      5.2. Boas Práticas para Code Review
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#53-promovendo-uma-cultura-de-code-review" class="md-nav__link">
+    <span class="md-ellipsis">
+      5.3. Promovendo uma Cultura de Code Review
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#6-resumo-do-fluxo-de-trabalho" class="md-nav__link">
+    <span class="md-ellipsis">
+      6. Resumo do Fluxo de Trabalho
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#7-exemplos-praticos" class="md-nav__link">
+    <span class="md-ellipsis">
+      7. Exemplos Práticos
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="7. Exemplos Práticos">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#71-exemplo-de-um-pull-request-com-code-owners" class="md-nav__link">
+    <span class="md-ellipsis">
+      7.1. Exemplo de um Pull Request com Code Owners
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#72-exemplo-de-arquivo-codeowners" class="md-nav__link">
+    <span class="md-ellipsis">
+      7.2. Exemplo de Arquivo CODEOWNERS
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#8-ferramentas-e-integracoes-para-facilitar-o-processo" class="md-nav__link">
+    <span class="md-ellipsis">
+      8. Ferramentas e Integrações para Facilitar o Processo
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="8. Ferramentas e Integrações para Facilitar o Processo">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#81-github-actions" class="md-nav__link">
+    <span class="md-ellipsis">
+      8.1. GitHub Actions
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#82-ferramentas-de-linters-e-formatadores" class="md-nav__link">
+    <span class="md-ellipsis">
+      8.2. Ferramentas de Linters e Formatadores
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#83-integracoes-com-ides" class="md-nav__link">
+    <span class="md-ellipsis">
+      8.3. Integrações com IDEs
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#9-conclusao" class="md-nav__link">
+    <span class="md-ellipsis">
+      9. Conclusão
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="9. Conclusão">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#beneficios-de-seguir-este-processo" class="md-nav__link">
+    <span class="md-ellipsis">
+      Benefícios de Seguir Este Processo:
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -758,7 +1160,7 @@
   
 
 
-  <h1>Pull request</h1>
+  <h1>Pull Request</h1>
 
 <h2 id="1-estrutura-das-branches-main-e-homolog"><strong>1. Estrutura das Branches: <code>main</code> e <code>homolog</code></strong></h2>
 <h3 id="11-branch-main"><strong>1.1. Branch <code>main</code></strong></h3>
