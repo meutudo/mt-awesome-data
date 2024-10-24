@@ -1,7 +1,7 @@
 site_name: meutudo Awesome Data
-site_url: https://seu-usuario.github.io/mt-awesome-data/
-repo_url: https://github.com/seu-usuario/mt-awesome-data
-repo_name: GitHub
+site_url: ''
+repo_url: https://github.com/meutudo/mt-awesome-data
+repo_name: mt-awesome-data
 theme:
   name: material
   palette:
