@@ -6,21 +6,21 @@ Este guia tem como objetivo facilitar sua contribuição, explicando como você 
 
 ## Índice
 
-- [Pré-requisitos](#pré-requisitos)
-- [Passo a Passo para Contribuir](#passo-a-passo-para-contribuir)
-  - [1. Fork e Clone do Repositório](#1-fork-e-clone-do-repositório)
-  - [2. Configurar o Ambiente de Desenvolvimento](#2-configurar-o-ambiente-de-desenvolvimento)
-  - [3. Criar uma Branch para Sua Contribuição](#3-criar-uma-branch-para-sua-contribuição)
-  - [4. Adicionar ou Atualizar a Documentação](#4-adicionar-ou-atualizar-a-documentação)
-  - [5. Testar as Alterações Localmente](#5-testar-as-alterações-localmente)
-  - [6. Commitar e Push das Alterações](#6-commitar-e-push-das-alterações)
-  - [7. Abrir um Pull Request](#7-abrir-um-pull-request)
-- [Processo de Code Review](#processo-de-code-review)
-  - [Uso de CODEOWNERS](#uso-de-codeowners)
-  - [Requisitos para o Merge](#requisitos-para-o-merge)
-- [Boas Práticas de Contribuição](#boas-práticas-de-contribuição)
-- [Recursos Adicionais](#recursos-adicionais)
-- [Código de Conduta](#código-de-conduta)
+- Pré-requisitos
+- Passo a Passo para Contribuir
+  - 1. Fork e Clone do Repositório
+  - 2. Configurar o Ambiente de Desenvolvimento
+  - 3. Criar uma Branch para Sua Contribuição
+  - 4. Adicionar ou Atualizar a Documentação
+  - 5. Testar as Alterações Localmente
+  - 6. Commitar e Push das Alterações
+  - 7. Abrir um Pull Request
+- Processo de Code Review
+  - Uso de CODEOWNERS
+  - Requisitos para o Merge
+- Boas Práticas de Contribuição
+- Recursos Adicionais
+- Código de Conduta
 
 ## Pré-requisitos
 
@@ -139,11 +139,11 @@ git checkout -b feature/adicionar-faq
 
      ## 1. Como posso contribuir para a documentação?
 
-     Para contribuir, siga o [guia de contribuição](../contribuindo.md). Crie uma branch, adicione ou atualize a documentação e abra um Pull Request.
+     Para contribuir, siga o [guia de contribuição](contribuindo.md). Crie uma branch, adicione ou atualize a documentação e abra um Pull Request.
 
      ## 2. Quem são os responsáveis pelas revisões de código?
 
-     As revisões são feitas pelos membros designados no arquivo [CODEOWNERS](../CODEOWNERS).
+     As revisões são feitas pelos membros designados no arquivo CODEOWNERS.
 
      ## 3. Quais são as melhores práticas para escrever documentação?
 

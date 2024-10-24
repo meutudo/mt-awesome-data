@@ -15,6 +15,7 @@ nav:
       - Bibliotecas: recursos/bibliotecas.md
       - FAQ: recursos/faq.md
       - Ferramentas: recursos/ferramentas.md
-      - Processo de Pull Request: recursos/processos-operacionais/pull-request.md
+  - Processos Operacionais:
+      - Pull Request: processos-operacionais/pull-request.md
   - Contribuindo: contribuindo.md
   - Sobre: sobre.md
