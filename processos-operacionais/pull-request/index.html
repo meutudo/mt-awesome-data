@@ -1,0 +1,1134 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+        <link rel="canonical" href="https://meutudo.github.io/mt-awesome-data/processos-operacionais/pull-request/">
+      
+      
+      
+      
+      <link rel="icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.5.42">
+    
+    
+      
+        <title>Pull request - MT Awesome Data</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.0253249f.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#1-estrutura-das-branches-main-e-homolog" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="MT Awesome Data" class="md-header__button md-logo" aria-label="MT Awesome Data" data-md-component="logo">
+      
+  <img src="../../assets/logo-meutudo.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            MT Awesome Data
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Pull request
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+    
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/meutudo/mt-awesome-data" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="MT Awesome Data" class="md-nav__button md-logo" aria-label="MT Awesome Data" data-md-component="logo">
+      
+  <img src="../../assets/logo-meutudo.png" alt="logo">
+
+    </a>
+    MT Awesome Data
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/meutudo/mt-awesome-data" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Home
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Recursos
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            Recursos
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../recursos/bibliotecas/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Bibliotecas
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../recursos/faq/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    FAQ
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../recursos/ferramentas/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Ferramentas
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../recursos/processos-operacionais/pull-request.md" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Processo de Pull Request
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../contribuindo/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Contribuindo
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../sobre/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Sobre
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#1-estrutura-das-branches-main-e-homolog" class="md-nav__link">
+    <span class="md-ellipsis">
+      1. Estrutura das Branches: main e homolog
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="1. Estrutura das Branches: main e homolog">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#11-branch-main" class="md-nav__link">
+    <span class="md-ellipsis">
+      1.1. Branch main
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#12-branch-homolog" class="md-nav__link">
+    <span class="md-ellipsis">
+      1.2. Branch homolog
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-processo-de-pull-request-pr" class="md-nav__link">
+    <span class="md-ellipsis">
+      2. Processo de Pull Request (PR)
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2. Processo de Pull Request (PR)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#21-criacao-de-uma-feature-branch" class="md-nav__link">
+    <span class="md-ellipsis">
+      2.1. Criação de uma Feature Branch
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#22-desenvolvimento-da-funcionalidade" class="md-nav__link">
+    <span class="md-ellipsis">
+      2.2. Desenvolvimento da Funcionalidade
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#23-criacao-do-pull-request" class="md-nav__link">
+    <span class="md-ellipsis">
+      2.3. Criação do Pull Request
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#24-revisao-de-codigo-code-review" class="md-nav__link">
+    <span class="md-ellipsis">
+      2.4. Revisão de Código (Code Review)
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-code-review-com-uso-de-codeowners" class="md-nav__link">
+    <span class="md-ellipsis">
+      3. Code Review com Uso de CODEOWNERS
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="3. Code Review com Uso de CODEOWNERS">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#31-o-que-e-o-codeowners" class="md-nav__link">
+    <span class="md-ellipsis">
+      3.1. O que é o CODEOWNERS?
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#32-configuracao-do-arquivo-codeowners" class="md-nav__link">
+    <span class="md-ellipsis">
+      3.2. Configuração do Arquivo CODEOWNERS
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#33-fluxo-de-code-review-com-codeowners" class="md-nav__link">
+    <span class="md-ellipsis">
+      3.3. Fluxo de Code Review com CODEOWNERS
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-aprovacao-e-merge-do-pull-request" class="md-nav__link">
+    <span class="md-ellipsis">
+      4. Aprovação e Merge do Pull Request
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="4. Aprovação e Merge do Pull Request">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#41-requisitos-para-o-merge" class="md-nav__link">
+    <span class="md-ellipsis">
+      4.1. Requisitos para o Merge
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#42-realizar-o-merge" class="md-nav__link">
+    <span class="md-ellipsis">
+      4.2. Realizar o Merge
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#43-pos-merge" class="md-nav__link">
+    <span class="md-ellipsis">
+      4.3. Pós-Merge
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5-incentivando-um-bom-code-review" class="md-nav__link">
+    <span class="md-ellipsis">
+      5. Incentivando um Bom Code Review
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="5. Incentivando um Bom Code Review">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#51-beneficios-de-um-bom-code-review" class="md-nav__link">
+    <span class="md-ellipsis">
+      5.1. Benefícios de um Bom Code Review
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#52-boas-praticas-para-code-review" class="md-nav__link">
+    <span class="md-ellipsis">
+      5.2. Boas Práticas para Code Review
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#53-promovendo-uma-cultura-de-code-review" class="md-nav__link">
+    <span class="md-ellipsis">
+      5.3. Promovendo uma Cultura de Code Review
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#6-resumo-do-fluxo-de-trabalho" class="md-nav__link">
+    <span class="md-ellipsis">
+      6. Resumo do Fluxo de Trabalho
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#7-exemplos-praticos" class="md-nav__link">
+    <span class="md-ellipsis">
+      7. Exemplos Práticos
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="7. Exemplos Práticos">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#71-exemplo-de-um-pull-request-com-code-owners" class="md-nav__link">
+    <span class="md-ellipsis">
+      7.1. Exemplo de um Pull Request com Code Owners
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#72-exemplo-de-arquivo-codeowners" class="md-nav__link">
+    <span class="md-ellipsis">
+      7.2. Exemplo de Arquivo CODEOWNERS
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#8-ferramentas-e-integracoes-para-facilitar-o-processo" class="md-nav__link">
+    <span class="md-ellipsis">
+      8. Ferramentas e Integrações para Facilitar o Processo
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="8. Ferramentas e Integrações para Facilitar o Processo">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#81-github-actions" class="md-nav__link">
+    <span class="md-ellipsis">
+      8.1. GitHub Actions
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#82-ferramentas-de-linters-e-formatadores" class="md-nav__link">
+    <span class="md-ellipsis">
+      8.2. Ferramentas de Linters e Formatadores
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#83-integracoes-com-ides" class="md-nav__link">
+    <span class="md-ellipsis">
+      8.3. Integrações com IDEs
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#9-conclusao" class="md-nav__link">
+    <span class="md-ellipsis">
+      9. Conclusão
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="9. Conclusão">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#beneficios-de-seguir-este-processo" class="md-nav__link">
+    <span class="md-ellipsis">
+      Benefícios de Seguir Este Processo:
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+  
+  
+
+
+  <h1>Pull request</h1>
+
+<h2 id="1-estrutura-das-branches-main-e-homolog"><strong>1. Estrutura das Branches: <code>main</code> e <code>homolog</code></strong></h2>
+<h3 id="11-branch-main"><strong>1.1. Branch <code>main</code></strong></h3>
+<ul>
+<li><strong>Descrição:</strong> É a branch principal do repositório onde o código estável e pronto para produção reside.</li>
+<li><strong>Função:</strong> Serve como base para lançamentos e deve sempre refletir o estado atual do produto em produção.</li>
+</ul>
+<h3 id="12-branch-homolog"><strong>1.2. Branch <code>homolog</code></strong></h3>
+<ul>
+<li><strong>Descrição:</strong> Atua como uma branch de homologação ou staging.</li>
+<li><strong>Função:</strong> É utilizada para testar novas funcionalidades em um ambiente que simula a produção antes de integrá-las à branch <code>main</code>.</li>
+<li><strong>Fluxo de Trabalho:</strong></li>
+<li>Desenvolvedores criam feature branches a partir da <code>main</code> ou da <code>homolog</code>.</li>
+<li>Após finalizar uma funcionalidade, criam um Pull Request para a branch <code>homolog</code>.</li>
+<li>Após testes e validações na <code>homolog</code>, as mudanças são promovidas para a <code>main</code>.</li>
+</ul>
+<h2 id="2-processo-de-pull-request-pr"><strong>2. Processo de Pull Request (PR)</strong></h2>
+<h3 id="21-criacao-de-uma-feature-branch"><strong>2.1. Criação de uma Feature Branch</strong></h3>
+<ol>
+<li><strong>Iniciar uma Nova Branch:</strong></li>
+<li>Nomeação: Utilize nomes descritivos, como <code>feature/nova-funcionalidade</code> ou <code>bugfix/corrige-erro</code>.</li>
+<li>Exemplo:
+     <code>bash
+     git checkout -b feature/adicionar-login</code></li>
+</ol>
+<h3 id="22-desenvolvimento-da-funcionalidade"><strong>2.2. Desenvolvimento da Funcionalidade</strong></h3>
+<ul>
+<li><strong>Boas Práticas:</strong></li>
+<li>Escrever código limpo e bem documentado.</li>
+<li>Realizar commits pequenos e frequentes com mensagens claras.</li>
+<li>Escrever testes automatizados, se aplicável.</li>
+</ul>
+<h3 id="23-criacao-do-pull-request"><strong>2.3. Criação do Pull Request</strong></h3>
+<ol>
+<li>
+<p><strong>Abrir um PR no GitHub:</strong></p>
+</li>
+<li>
+<p>Comparar a feature branch com a branch <code>homolog</code>.</p>
+</li>
+<li>Preencher o título e a descrição do PR com detalhes sobre as mudanças realizadas.</li>
+<li>
+<p><strong>Exemplo de Descrição:</strong></p>
+<p>```
+ ### Descrição
+ Implementa a funcionalidade de login com autenticação via email e senha.</p>
+<p>### Tarefas
+ - Criação do formulário de login
+ - Integração com a API de autenticação
+ - Adição de testes unitários
+ ```</p>
+</li>
+</ol>
+<h3 id="24-revisao-de-codigo-code-review"><strong>2.4. Revisão de Código (Code Review)</strong></h3>
+<h2 id="3-code-review-com-uso-de-codeowners"><strong>3. Code Review com Uso de CODEOWNERS</strong></h2>
+<h3 id="31-o-que-e-o-codeowners"><strong>3.1. O que é o CODEOWNERS?</strong></h3>
+<ul>
+<li><strong>Definição:</strong> É um arquivo especial (<code>CODEOWNERS</code>) localizado na raiz do repositório que define quais membros ou equipes são responsáveis por revisar e aprovar mudanças em determinadas partes do código.</li>
+<li><strong>Localização:</strong> Geralmente em <code>.github/CODEOWNERS</code> ou na raiz do repositório.</li>
+</ul>
+<h3 id="32-configuracao-do-arquivo-codeowners"><strong>3.2. Configuração do Arquivo <code>CODEOWNERS</code></strong></h3>
+<ul>
+<li><strong>Formato Básico:</strong></li>
+</ul>
+<p>```
+  # Dono para toda a base de código
+  * @equipe-dados</p>
+<p># Dono para arquivos específicos
+  /docs/ @documentacao
+  /src/components/ @frontend
+  ```</p>
+<ul>
+<li><strong>Exemplo Prático:</strong></li>
+</ul>
+<p>```
+  # Todos os arquivos
+  * @dev-team</p>
+<p># Arquivos de documentação
+  /docs/* @documentacao</p>
+<p># Componentes Frontend
+  /src/components/* @frontend-team
+  ```</p>
+<h3 id="33-fluxo-de-code-review-com-codeowners"><strong>3.3. Fluxo de Code Review com CODEOWNERS</strong></h3>
+<ol>
+<li><strong>Notificação Automática:</strong></li>
+<li>Quando um PR é criado que altera arquivos cobertos pelo <code>CODEOWNERS</code>, os responsáveis são automaticamente adicionados como revisores.</li>
+<li><strong>Revisão pelos Code Owners:</strong></li>
+<li><strong>Responsabilidades:</strong><ul>
+<li>Verificar a qualidade do código.</li>
+<li>Garantir que as mudanças seguem os padrões e as diretrizes do projeto.</li>
+<li>Validar a funcionalidade implementada.</li>
+</ul>
+</li>
+<li><strong>Feedback e Ajustes:</strong></li>
+<li>Os revisores podem solicitar mudanças ou melhorias.</li>
+<li>O autor do PR deve realizar as alterações necessárias e atualizar o PR.</li>
+</ol>
+<h2 id="4-aprovacao-e-merge-do-pull-request"><strong>4. Aprovação e Merge do Pull Request</strong></h2>
+<h3 id="41-requisitos-para-o-merge"><strong>4.1. Requisitos para o Merge</strong></h3>
+<ul>
+<li><strong>Aprovações Mínimas:</strong></li>
+<li>É necessário que pelo menos <strong>dois revisores</strong> aprovem o PR antes que ele possa ser mesclado.</li>
+<li><strong>Resolução de Conflitos:</strong></li>
+<li>Todos os conflitos entre a branch de origem (<code>feature</code>) e a branch de destino (<code>homolog</code>) devem ser resolvidos antes do merge.</li>
+<li><strong>Como Resolver Conflitos:</strong><ol>
+<li><strong>Atualizar a Feature Branch com a Última Versão da Branch de Destino:</strong>
+   <code>bash
+   git checkout feature/adicionar-login
+   git fetch origin
+   git merge origin/homolog</code></li>
+<li><strong>Resolver os Conflitos Manualmente:</strong></li>
+<li>Abrir os arquivos com conflitos.</li>
+<li>Decidir quais mudanças manter.</li>
+<li>Marcar os conflitos resolvidos.</li>
+<li><strong>Finalizar o Merge:</strong>
+   <code>bash
+   git add .
+   git commit -m "Resolve conflitos entre homolog e feature/adicionar-login"
+   git push origin feature/adicionar-login</code></li>
+</ol>
+</li>
+</ul>
+<h3 id="42-realizar-o-merge"><strong>4.2. Realizar o Merge</strong></h3>
+<ol>
+<li><strong>Após as Aprovações e Resolução dos Conflitos:</strong></li>
+<li>O autor do PR ou um membro autorizado pode clicar em <strong>"Merge pull request"</strong> no GitHub.</li>
+<li><strong>Escolher o Tipo de Merge:</strong></li>
+<li><strong>Merge Commit:</strong> Mantém o histórico completo do branch.</li>
+<li><strong>Squash and Merge:</strong> Combina todos os commits do PR em um único commit na branch de destino.</li>
+<li><strong>Rebase and Merge:</strong> Reescreve o histórico para linearizar os commits.</li>
+</ol>
+<h3 id="43-pos-merge"><strong>4.3. Pós-Merge</strong></h3>
+<ul>
+<li><strong>Atualização das Branches:</strong></li>
+<li>A branch <code>homolog</code> agora inclui as mudanças aprovadas.</li>
+<li>Eventualmente, as mudanças são promovidas para a branch <code>main</code> após testes finais.</li>
+</ul>
+<h2 id="5-incentivando-um-bom-code-review"><strong>5. Incentivando um Bom Code Review</strong></h2>
+<h3 id="51-beneficios-de-um-bom-code-review"><strong>5.1. Benefícios de um Bom Code Review</strong></h3>
+<ul>
+<li><strong>Qualidade do Código:</strong> Identificação e correção de bugs antes que cheguem à produção.</li>
+<li><strong>Padronização:</strong> Garantia de que todos seguem os padrões e diretrizes do projeto.</li>
+<li><strong>Compartilhamento de Conhecimento:</strong> Membros da equipe aprendem uns com os outros, aumentando a coesão e a capacidade coletiva.</li>
+<li><strong>Manutenção:</strong> Facilita a manutenção futura do código, pois mais olhos revisaram e entenderam as mudanças.</li>
+</ul>
+<h3 id="52-boas-praticas-para-code-review"><strong>5.2. Boas Práticas para Code Review</strong></h3>
+<ol>
+<li><strong>Clareza na Comunicação:</strong></li>
+<li>Fornecer feedback construtivo e específico.</li>
+<li>Evitar críticas pessoais; focar no código e não no autor.</li>
+<li><strong>Revisões Regulares e Oportunas:</strong></li>
+<li>Responder aos PRs rapidamente para não atrasar o fluxo de trabalho.</li>
+<li><strong>Foco nos Detalhes:</strong></li>
+<li>Verificar não apenas a funcionalidade, mas também a legibilidade, performance e segurança do código.</li>
+<li><strong>Uso de Ferramentas e Integrações:</strong></li>
+<li>Utilizar ferramentas de linting e análise estática para complementar o code review manual.</li>
+<li><strong>Documentação:</strong></li>
+<li>Garantir que as mudanças estejam bem documentadas, tanto no código quanto na documentação do projeto.</li>
+<li><strong>Respeito às Regras do PR:</strong></li>
+<li>Seguir as diretrizes estabelecidas no processo de revisão, como a necessidade de duas aprovações e a resolução de conflitos.</li>
+</ol>
+<h3 id="53-promovendo-uma-cultura-de-code-review"><strong>5.3. Promovendo uma Cultura de Code Review</strong></h3>
+<ul>
+<li><strong>Treinamentos e Workshops:</strong></li>
+<li>Realizar sessões de treinamento para ensinar as melhores práticas de code review.</li>
+<li><strong>Feedback Contínuo:</strong></li>
+<li>Encorajar a equipe a fornecer e receber feedback de forma positiva e construtiva.</li>
+<li><strong>Reconhecimento:</strong></li>
+<li>Reconhecer e valorizar as contribuições significativas durante as revisões.</li>
+<li><strong>Estabelecer Normas Claras:</strong></li>
+<li>Definir claramente o que se espera durante um code review, incluindo critérios de aprovação e padrões de código.</li>
+</ul>
+<h2 id="6-resumo-do-fluxo-de-trabalho"><strong>6. Resumo do Fluxo de Trabalho</strong></h2>
+<ol>
+<li>
+<p><strong>Criação de uma Feature Branch:</strong></p>
+</li>
+<li>
+<p>Partir da branch <code>main</code> ou <code>homolog</code> para desenvolver uma nova funcionalidade ou corrigir um bug.</p>
+</li>
+<li>
+<p><strong>Desenvolvimento e Commit:</strong></p>
+</li>
+<li>
+<p>Desenvolver a funcionalidade com commits claros e objetivos.</p>
+</li>
+<li>
+<p><strong>Criação de um Pull Request:</strong></p>
+</li>
+<li>
+<p>Solicitar a integração das mudanças para a branch <code>homolog</code>.</p>
+</li>
+<li>
+<p><strong>Code Review com Code Owners:</strong></p>
+</li>
+<li>
+<p>Os responsáveis definidos no <code>CODEOWNERS</code> revisam o PR.</p>
+</li>
+<li>
+<p>Necessidade de pelo menos duas aprovações para prosseguir.</p>
+</li>
+<li>
+<p><strong>Resolução de Conflitos:</strong></p>
+</li>
+<li>
+<p>Garantir que a branch de origem está atualizada com a branch de destino e resolver quaisquer conflitos.</p>
+</li>
+<li>
+<p><strong>Merge do Pull Request:</strong></p>
+</li>
+<li>
+<p>Após as aprovações e a resolução de conflitos, realizar o merge para a branch <code>homolog</code>.</p>
+</li>
+<li>
+<p><strong>Testes e Validações:</strong></p>
+</li>
+<li>
+<p>Realizar testes na branch <code>homolog</code> para garantir que tudo está funcionando conforme esperado.</p>
+</li>
+<li>
+<p><strong>Promoção para a Branch <code>main</code>:</strong></p>
+</li>
+<li>Após a validação na <code>homolog</code>, as mudanças são promovidas para a branch <code>main</code> para serem lançadas em produção.</li>
+</ol>
+<h2 id="7-exemplos-praticos"><strong>7. Exemplos Práticos</strong></h2>
+<h3 id="71-exemplo-de-um-pull-request-com-code-owners"><strong>7.1. Exemplo de um Pull Request com Code Owners</strong></h3>
+<p>Imagine que você está adicionando uma nova funcionalidade de <strong>login</strong> ao projeto.</p>
+<ol>
+<li><strong>Criação da Branch:</strong></li>
+</ol>
+<p><code>bash
+   git checkout -b feature/adicionar-login</code></p>
+<ol>
+<li>
+<p><strong>Desenvolvimento e Commits:</strong></p>
+</li>
+<li>
+<p>Implementação do formulário de login.</p>
+</li>
+<li>Integração com a API de autenticação.</li>
+<li>
+<p>Adição de testes unitários.</p>
+</li>
+<li>
+<p><strong>Criação do Pull Request:</strong></p>
+</li>
+<li>
+<p>Comparar <code>feature/adicionar-login</code> com <code>homolog</code>.</p>
+</li>
+<li>
+<p>Descrição detalhada das mudanças.</p>
+</li>
+<li>
+<p><strong>Revisão pelo Code Owners:</strong></p>
+</li>
+<li>
+<p>O arquivo <code>CODEOWNERS</code> define que a equipe de frontend (<code>@frontend-team</code>) é responsável por revisar mudanças em <code>/src/components/</code>.</p>
+</li>
+<li>
+<p>Além disso, a equipe de segurança (<code>@security-team</code>) é responsável por alterações em <code>/src/auth/</code>.</p>
+</li>
+<li>
+<p><strong>Obtenção de Aprovações:</strong></p>
+</li>
+<li>
+<p>Dois membros das equipes designadas revisam e aprovam o PR.</p>
+</li>
+<li>
+<p><strong>Resolução de Conflitos:</strong></p>
+</li>
+<li>
+<p>Caso a branch <code>homolog</code> tenha sofrido mudanças desde a criação da feature branch, você deve atualizar sua branch e resolver quaisquer conflitos.</p>
+</li>
+<li>
+<p><strong>Merge do PR:</strong></p>
+</li>
+<li>Após todas as aprovações e a resolução dos conflitos, realizar o merge para a branch <code>homolog</code>.</li>
+</ol>
+<h3 id="72-exemplo-de-arquivo-codeowners"><strong>7.2. Exemplo de Arquivo <code>CODEOWNERS</code></strong></h3>
+<pre><code class="language-plaintext"># Definindo donos para toda a base de código
+* @dev-team
+
+# Donos específicos para diretórios
+/docs/ @documentacao
+/src/components/ @frontend-team
+/src/auth/ @security-team
+</code></pre>
+<h2 id="8-ferramentas-e-integracoes-para-facilitar-o-processo"><strong>8. Ferramentas e Integrações para Facilitar o Processo</strong></h2>
+<h3 id="81-github-actions"><strong>8.1. GitHub Actions</strong></h3>
+<ul>
+<li><strong>Automatização:</strong> Automatizar processos como testes, builds e deploys.</li>
+<li><strong>Exemplo de Workflow para Code Review:</strong></li>
+<li>Executar testes automatizados antes de solicitar a revisão.</li>
+<li>Verificar o estilo do código com ferramentas de linting.</li>
+</ul>
+<h3 id="82-ferramentas-de-linters-e-formatadores"><strong>8.2. Ferramentas de Linters e Formatadores</strong></h3>
+<ul>
+<li><strong>Objetivo:</strong> Garantir que o código segue os padrões estabelecidos pelo projeto.</li>
+<li><strong>Exemplos:</strong></li>
+<li><strong>ESLint</strong> para JavaScript.</li>
+<li><strong>Pylint</strong> para Python.</li>
+<li><strong>Prettier</strong> para formatação de código.</li>
+</ul>
+<h3 id="83-integracoes-com-ides"><strong>8.3. Integrações com IDEs</strong></h3>
+<ul>
+<li><strong>Benefício:</strong> Facilitar a criação de commits, PRs e a realização de code reviews diretamente na IDE.</li>
+<li><strong>Exemplos:</strong></li>
+<li><strong>GitHub Extension for VS Code:</strong> Integração completa com GitHub.</li>
+<li><strong>JetBrains IDEs:</strong> Integração nativa com GitHub.</li>
+</ul>
+<h2 id="9-conclusao"><strong>9. Conclusão</strong></h2>
+<p>Implementar um processo estruturado de Pull Requests com <strong>code review</strong> eficaz é fundamental para a manutenção da qualidade do código, a colaboração eficiente e o sucesso dos projetos de desenvolvimento. Utilizar ferramentas como o <strong>CODEOWNERS</strong>, exigir múltiplas aprovações e resolver conflitos de forma diligente são práticas que fortalecem a integridade do código e promovem um ambiente de trabalho colaborativo e produtivo.</p>
+<h3 id="beneficios-de-seguir-este-processo"><strong>Benefícios de Seguir Este Processo:</strong></h3>
+<ul>
+<li><strong>Qualidade e Consistência:</strong> Garantia de que o código adicionado ao projeto está de acordo com os padrões estabelecidos.</li>
+<li><strong>Detecção Precoce de Bugs:</strong> Identificação e correção de erros antes que cheguem à produção.</li>
+<li><strong>Compartilhamento de Conhecimento:</strong> Membros da equipe aprendem uns com os outros, aumentando a competência coletiva.</li>
+<li><strong>Redução de Riscos:</strong> Menor probabilidade de introdução de vulnerabilidades ou problemas críticos no sistema.</li>
+</ul>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    <script id="__config" type="application/json">{"base": "../..", "features": [], "search": "../../assets/javascripts/workers/search.6ce7567c.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.83f73b43.min.js"></script>
+      
+    
+  </body>
+</html>
