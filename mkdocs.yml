@@ -4,11 +4,19 @@ repo_url: https://github.com/meutudo/mt-awesome-data
 repo_name: GitHub
 theme:
   name: material
-  logo: assets/logo-meutudo.png
-  # favicon: assets/favicon.ico
   palette:
-    primary: indigo
-    accent: indigo
+    - scheme: default
+      primary: '#EE008E'
+      accent: '#EE008E'
+      toggle:
+        icon: material/weather-night
+        name: Mudar para o modo escuro
+    - scheme: slate
+      primary: '#EE008E'
+      accent: '#EE008E'
+      toggle:
+        icon: material/weather-sunny
+        name: Mudar para o modo claro
 nav:
   - Home: index.md
   - Recursos:
