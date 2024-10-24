@@ -19,3 +19,10 @@ nav:
       - Pull Request: processos-operacionais/pull-request.md
   - Contribuindo: contribuindo.md
   - Sobre: sobre.md
+# features:
+#   - navigation.sections
+#   - navigation.top
+plugins:
+  - search
+  - awesome-pages
+  # - link-checker
