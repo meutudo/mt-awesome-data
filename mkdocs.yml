@@ -12,8 +12,9 @@ theme:
 nav:
   - Home: index.md
   - Recursos:
+      - Bibliotecas: recursos/bibliotecas.md
       - FAQ: recursos/faq.md
       - Ferramentas: recursos/ferramentas.md
-      - Bibliotecas: recursos/bibliotecas.md
+      - Processo de Pull Request: recursos/processos-operacionais/pull-request.md
   - Contribuindo: contribuindo.md
   - Sobre: sobre.md
