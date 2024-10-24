@@ -25,6 +25,8 @@ nav:
       - Ferramentas: recursos/ferramentas.md
   - Processos Operacionais:
       - Pull Request: processos-operacionais/pull-request.md
+  - Capacitações:
+      - Code-Review: capacitacoes/code-review.md
   - Contribuindo: contribuindo.md
   - Sobre: sobre.md
 # features:
