@@ -12,6 +12,7 @@ theme:
 nav:
   - Home: index.md
   - Recursos:
+      - FAQ: recursos/faq.md
       - Ferramentas: recursos/ferramentas.md
       - Bibliotecas: recursos/bibliotecas.md
   - Contribuindo: contribuindo.md
